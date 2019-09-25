@@ -127,8 +127,7 @@ table {
   border-spacing: 0;
 }
 html {
-  /* background: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;  */
-  background: url("https://images.unsplash.com/uploads/1412026095116d2b0c90e/3bf33993?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80") no-repeat center center fixed;
+  background: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -144,7 +143,6 @@ html {
 html,
 body {
   font-family: 'Ubuntu', sans-serif;
-  color: #5E6164;
 }
 h1,
 h2,
@@ -152,7 +150,6 @@ h3,
 h4,
 h5 {
   font-family: 'Russo One', sans-serif;
-  color: #23293B;
 }
 h2 {
   font-size: 3.2rem;
@@ -235,11 +232,9 @@ p {
   }
 }
 .navigation .top a:hover {
-  background-color: #f18973;
+  background-color: #00004d;
+  color: white;
   border-radius: 10px;
-}
-.home {
-  /* background: url("https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80") no-repeat center center fixed;  */
 }
 @import "about";
 .whole article {
@@ -255,7 +250,7 @@ p {
   font-stretch: wider;
   font-style: italic;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
 }
 @media (max-width:800px) {
   .whole article {
@@ -267,7 +262,7 @@ p {
 .whole article h2 {
   text-align: center;
   font-weight: 900px;
-  color: brown;
+  color: #00004d;
 }
 @media (max-width:800px) {
   .whole article h2 {
@@ -278,7 +273,7 @@ p {
   text-align: center;
   line-height: 2;
   font-weight: 900;
-  color: brown;
+  color: #00004d;
 }
 @media (max-width:800px) {
   .whole article p {
@@ -306,8 +301,8 @@ p {
   }
 }
 .whole article .sign_up button {
-  background-color: coral;
-  color: black;
+  background-color: #00004d;
+  color: white;
   margin: 0 10px 20px;
   cursor: pointer;
   width: 200px;
@@ -315,17 +310,17 @@ p {
   font-size: 2.2rem;
   border-radius: 8px;
   padding: 10px;
+  text-decoration: none;
   margin: 20px;
 }
 @media (max-width:800px) {
   .whole article .sign_up button {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #bc5a45;
   }
 }
 .whole article .sign_up button:hover {
-  background-color: #f18973;
+  background-color: #3366ff;
 }
 .whole .news {
   display: flex;
@@ -350,6 +345,10 @@ p {
     margin: auto;
     margin-top: none;
   }
+}
+.whole .news h4 {
+  text-align: center;
+  margin-top: 10px;
 }
 .whole .news section {
   width: 200px;
