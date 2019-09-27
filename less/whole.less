@@ -6,28 +6,29 @@
 
     article {
 
-    .custom-layout(column,center);
+ .custom-layout(column,center);
 
     margin: 0 auto;
     margin-top: 10px; 
     margin-bottom: 50px;  
     width: 70%;
     height:100%;
-    @header-font-color: #00004d;
+    @header-font-color: @navy-blue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-stretch: wider;
     font-style: italic;
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.4);
+    @main-backgrounf:@porcelain;
     
     
-   
 
 
     @media @mobile {
-        background-color: antiquewhite;
+        background-color: #DDD;
+        opacity: 0.8;
         width: 90%;
-        background: rgba(255, 255, 255, 0.5);
+        // background: rgba(255, 255, 255, 0.5);
+        @main-background: @porcelain;
 
     }
    
@@ -37,9 +38,9 @@ h2 {
 
     text-align: center;
     font-weight:900px;
-    color: #00004d;
+    @header-font-color: @navy-blue;
 
-    
+    // color: #00004d;
 
     @media @mobile {
         color:black;
@@ -56,7 +57,8 @@ p  {
     text-align: center;
     line-height: 2;
     font-weight:900;
-    color: #00004d;
+    // color: #00004d;
+    @header-font-color: @navy-blue;
 
 
     @media @mobile {
@@ -93,14 +95,13 @@ p  {
     @media @mobile {
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
- 
     
     
-} 
+        } 
 
 
 
-}
+    }
 
 
 button:hover  {
@@ -184,10 +185,7 @@ button:hover  {
 
         @media @mobile {
             margin:10px;
-        }
-
-
-       
+        }   
 
 
     }
@@ -196,20 +194,18 @@ button:hover  {
 
     #firstpic {
         background-image: url("https://images.unsplash.com/photo-1508855173839-a6d69c12573a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
-        background-size: cover;
-        
-        
-        
+        background-size: cover;    
         
     }
 
    
     .flip3D {
         background-color: #DDD;
+        
         position: relative;
         z-index: 1;
     
-}
+    }
 
 
     #firstpic_of {
@@ -229,8 +225,7 @@ button:hover  {
         transition: transform 0.7s linear 0s;
         transform-style: preserve-3d;
         z-index: 10;
-       
-       
+          
 
     }
 
@@ -241,14 +236,10 @@ button:hover  {
         
         transform:perspective(600px) rotateY(-180deg);
         transform-style: preserve-3d;
+             
         
-
-
-        
-            
     }
 
-    
 
 
     .back {
@@ -258,23 +249,19 @@ button:hover  {
         top:0;
         left:0;
 
-
-
     }
 
 
 
     .back:hover {
         display:block;
-       
-       
+             
 
     }
 
 }
 
     
-
 
     #secondpic { 
 
@@ -301,11 +288,10 @@ button:hover  {
     #thirdpic_of {
 
             background-image:url("../img/bilgun.png");  
-            background-size: cover;
-           
-            
+            background-size: cover;      
 
             }
+
         
      #forthpic { 
             background-image: url("https://images.unsplash.com/photo-1554966681-3fc9da8ed38d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
@@ -317,14 +303,12 @@ button:hover  {
             background-size: cover;
         }
 
+
         #fithpic_of {
             background-image: url("../img/Shannon.png");
             background-size: cover;
 
         }
-
-    
-
       
 
     }

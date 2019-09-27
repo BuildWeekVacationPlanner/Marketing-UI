@@ -27,21 +27,20 @@ img {
         letter-spacing: 2px;
         border-radius: 10px;
 
-            @media @mobile {
-
-            margin-top: 80px;
-            margin-left: 20px;
-            text-align: right;
-            color: black;
-
+         @media @mobile {
+                margin-top: 80px;
+                margin-left: 20px;
+                text-align: right;
+                @header-font-color: @navy-blue;
+                // color: black;
             }
+
 
         span {
             margin-left: 30px;
         }
       
            
-    
     }
 
 
@@ -54,10 +53,10 @@ img {
         margin: 0 auto;
         padding: 10px;
 
-        @media @mobile {
-         
-        display: flex;
-        flex-direction: column;
+        @media @mobile {  
+        .custom-layout(column,center);
+        // display: flex;
+        // flex-direction: column;
         margin: 20px;
 
         }
@@ -86,7 +85,10 @@ img {
 
 
        a:hover {
-        background-color:	 #00004d;
+        // background-color: #00004d;
+        background-color: @navy-blue;
+        @header-font-color: @ebony-clay;
+        // @header-font-color: @navy-blue;
         color: white;
         border-radius: 10px;
        }

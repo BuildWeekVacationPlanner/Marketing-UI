@@ -195,7 +195,6 @@ p {
     margin-top: 80px;
     margin-left: 20px;
     text-align: right;
-    color: black;
   }
 }
 .navigation h1 span {
@@ -214,6 +213,7 @@ p {
   .navigation .top {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin: 20px;
   }
 }
@@ -250,19 +250,17 @@ p {
   font-stretch: wider;
   font-style: italic;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.4);
 }
 @media (max-width:800px) {
   .whole article {
-    background-color: antiquewhite;
+    background-color: #DDD;
+    opacity: 0.8;
     width: 90%;
-    background: rgba(255, 255, 255, 0.5);
   }
 }
 .whole article h2 {
   text-align: center;
   font-weight: 900px;
-  color: #00004d;
 }
 @media (max-width:800px) {
   .whole article h2 {
@@ -273,7 +271,6 @@ p {
   text-align: center;
   line-height: 2;
   font-weight: 900;
-  color: #00004d;
 }
 @media (max-width:800px) {
   .whole article p {
